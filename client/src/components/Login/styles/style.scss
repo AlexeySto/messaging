@@ -1,0 +1,89 @@
+@import './../../../styles/vars';
+@import './../../../styles/mixins';
+
+.registration {
+    max-width: 1140px;
+    width: 95vw;
+    @include columnCenter;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    justify-content: space-between;
+    gap: 8vw;
+}
+
+.form {
+    width: 40%;
+    @include columnCenter;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    opacity: 70%;
+
+    &__title {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+
+    &__input {
+        height: 45px;
+        padding-left: 17px;
+        outline: none;
+        margin-right: 7px;
+        border-radius: 10px;     
+    }
+
+    &__text {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        color: $colorBorder;
+    }
+
+    &__button_registration {
+        @extend .button !optional;
+        width: 167px;
+        height: 50px;
+        @include rowCenter;
+        border: none;
+        justify-content: center;
+        margin-top: 39px;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 18px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+}
+
+.fieldset {
+    border: none;
+    @include rowCenter;
+    gap: 20px;
+    margin-top: 31px;
+    margin-bottom: 33px;
+}
+
+
+@media (min-width: $minWidthTablet) and (max-width: $maxWidthTablet) {
+
+    .registration {
+        width: 95vw;
+    }
+
+    .form {
+        width: 50%;
+    }
+}
+
+@media (max-width: $maxWidthMobile) {
+
+    .registration {
+        @include columnCenter;
+    }
+
+    .form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,54 @@
+@import './../../../styles/vars'
+@import './../../../styles/mixins'
+
+.message-list
+    max-height: 81vh
+    height: auto
+    @include scroll()
+    flex-direction: column-reverse
+
+.message_box
+    margin-bottom: 15px
+    display: flex // Используем flex для правильного позиционирования
+
+.my_message_box
+    justify-content: flex-end // Исходящие сообщения справа
+
+.message
+    max-width: 90%
+    width: auto
+    min-width: 150px
+    background-color: $colorSite
+    color: $colorText
+    @include column()
+    margin-left: 4px
+    border-radius: 8px
+    border-bottom-left-radius: 0px
+    padding: 4px 8px
+
+    gap: 2px
+
+    &__author
+        font-weight: bold
+        color: #007bff
+        text-decoration: none
+
+    &__text
+        margin: 15px 0
+        color: #212529
+
+    &__time
+        font-size: 0.8em
+        color: #6c757d
+        bottom: 5px
+        right: 10px
+
+.my_message
+    border-radius: 8px
+    padding: 10px
+    margin-right: 4px
+    position: relative
+    justify-content: flex-start
+    border-bottom-left-radius: 8px
+    border-bottom-right-radius: 0px
+    background-color: $colorSiteSecond

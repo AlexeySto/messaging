@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: url(./../images/fone.jpg);
+}
+
+.button {
+  background-color: #40a3b1;
+  display: block;
+  width: 212px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  color: rgba(95, 186, 199, 0.368627451);
+  text-align: center;
+  line-height: 40px;
+  transition: all 0.3s;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+.button:hover {
+  background-color: rgba(95, 186, 199, 0.368627451);
+  color: #40a3b1;
+}/*# sourceMappingURL=style.css.map */

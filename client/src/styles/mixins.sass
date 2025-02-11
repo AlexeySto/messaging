@@ -1,0 +1,28 @@
+@mixin columnCenter()
+    @include column()
+    align-items: center
+
+@mixin column()
+    display: flex
+    flex-direction: column
+
+@mixin rowCenter()
+    @include row()
+    align-items: center
+
+@mixin row()
+    display: flex
+    flex-direction: row
+
+@mixin scroll()
+    overflow-y: auto
+    
+    &::-webkit-scrollbar
+        width: 5px
+
+    &::-webkit-scrollbar-thumb
+        background-color: $colorSite
+        border-radius: 4px
+
+    &::-webkit-scrollbar-track
+        background: $colorSiteSecond

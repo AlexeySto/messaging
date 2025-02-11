@@ -1,0 +1,54 @@
+form {
+  background: rgba(95, 186, 199, 0.368627451);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+.custom-file-input input[type=file] {
+  display: none;
+}
+
+.file-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+textarea {
+  display: flex;
+  width: -webkit-fill-available;
+  padding: 7px 20px;
+  color: #F7F7F7;
+  background-color: #40a3b1;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: rgba(95, 186, 199, 0.368627451);
+  border-radius: 5px;
+}
+textarea:hover {
+  background-color: rgba(95, 186, 199, 0.368627451);
+}
+
+button, .custom-file-input {
+  display: block;
+  width: auto;
+  padding: 7px 20px;
+  color: #F7F7F7;
+  background-color: #40a3b1;
+  background-clip: padding-box;
+  border: 1px solid;
+  border-color: rgba(95, 186, 199, 0.368627451);
+  border-radius: 5px;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+button:hover, .custom-file-input:hover {
+  background-color: rgba(95, 186, 199, 0.368627451);
+}
+button:active, .custom-file-input:active {
+  background-color: #5D5D5D;
+  border-color: #40a3b1;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.09);
+}/*# sourceMappingURL=style.css.map */

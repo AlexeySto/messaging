@@ -1,0 +1,73 @@
+@import './../../../styles/vars';
+@import './../../../styles/mixins';
+    
+.footer {
+    @include rowCenter;
+    width: 100vw;
+    max-width: $maxWidth;
+    height: 75px;
+    background-color: $colorSite;
+    justify-content: space-around;
+    z-index: 3;
+
+    &__text {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+    }
+
+    &__brands {
+        @include row;
+        gap: 8px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    &__brand {
+        width: 32px;
+        height: 32px;
+        @include rowCenter;
+        justify-content: center;
+        background-color: white;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+    .footer {
+        justify-content: space-between;
+
+        &__text {
+            padding-left: 32px;
+        }
+
+        &__brands {
+            padding-right: 32px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+
+    .footer {
+        display: flex;
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+
+        &__brands {
+            padding-top: 43px;
+            padding-bottom: 40px;
+        }
+
+        &__text {
+            padding-top: 0;
+            padding-bottom: 9px;
+        }
+    }
+}
+
+            

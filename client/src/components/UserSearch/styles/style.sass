@@ -1,0 +1,40 @@
+@import './../../../styles/vars'
+@import './../../../styles/mixins'
+
+.user_search
+
+    &__input
+        display: flex
+        width: 200px
+        padding: 7px 20px
+        color: $colorText
+        background-color: $colorSite
+        background-clip: padding-box
+        border: 1px solid
+        border-color: $colorSiteSecond
+        border-radius: 5px
+
+        &:hover
+            background-color: $colorSiteSecond
+
+.user_list
+    width: 100%
+    height: auto
+    max-height: 80vh
+    display: grid
+    @include scroll()
+    padding: 4px
+    gap: 4px
+
+    &__item
+        height: 40px
+        width: 90%
+        @include columnCenter()
+        justify-content: center
+        color: $colorText
+        background-color: $colorSite
+        border-radius: 5px
+        box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.2)
+
+        &:hover
+            background-color: $colorSiteSecond

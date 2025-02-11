@@ -1,0 +1,95 @@
+@import './../../../styles/vars'
+@import './../../../styles/mixins'
+
+form
+    background: $colorSiteSecond
+    @include rowCenter()
+    justify-content: space-between
+    height: auto
+
+.custom-file-input
+
+    input[type='file']
+        display: none // Скрываем стандартный элемент input
+
+.file-icon
+    width: 30px
+    height: 30px
+    margin-right: 5px // Для иконки файла (при необходимости)
+
+textarea
+    display: flex
+    width: -webkit-fill-available
+    padding: 7px 20px
+    color: $colorText
+    background-color: $colorSite
+    background-clip: padding-box
+    border: 1px solid
+    border-color: $colorSiteSecond
+    border-radius: 5px
+
+    &:hover
+        background-color: $colorSiteSecond
+
+button, .custom-file-input
+    display: block
+    width: auto
+    padding: 7px 20px
+    color: $colorText
+    background-color: $colorSite
+    background-clip: padding-box
+    border: 1px solid
+    border-color: $colorSiteSecond
+    border-radius: 5px
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0px 1px 1px rgba(0, 0, 0, 0.2)
+
+    &:hover
+        background-color: $colorSiteSecond
+
+    &:active
+        background-color: $gray
+        border-color: $colorSite
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.09)
+
+// form
+//     display: flex
+//     flex-direction: column
+
+// .custom-file-input
+//     position: relative
+//     margin-bottom: 15px
+
+//     .file-icon
+//         margin-right: 8px
+//         vertical-align: middle
+
+//     input[type='file']
+//         display: none
+
+//     &:hover
+//         cursor: pointer
+
+// textarea
+//     padding: 10px
+//     border: 1px solid #ced4da
+//     border-radius: 5px
+//     resize: none
+//     height: 60px
+//     margin-bottom: 10px
+//     outline: none
+
+//     &:focus
+//         border-color: #007bff
+//         box-shadow: 0 0 5px rgba(0, 123, 255, 0.5)
+
+// button
+//     background-color: #007bff
+//     color: #ffffff
+//     border: none
+//     border-radius: 5px
+//     padding: 10px
+//     cursor: pointer
+//     transition: background-color 0.3s
+
+//     &:hover
+//         background-color: darken(#007bff, 10%)

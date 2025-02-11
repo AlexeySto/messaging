@@ -1,0 +1,27 @@
+@import './../../../styles/vars'
+@import './../../../styles/mixins'
+
+.chats-list
+    width: 25vw
+    height: 86vh
+    background: $colorSiteSecond
+    @include scroll()
+    padding: 4px
+
+.chat-view
+    width: 100%
+    height: 70px
+    margin-bottom: 4px
+    border-radius: 10px
+    background: $colorSite
+    @include rowCenter()
+    justify-content: center
+
+    &__active
+        background: $colorSiteSecond
+
+    &:hover
+        background-color: $colorSiteSecond
+
+    &__title
+        color: $colorText
